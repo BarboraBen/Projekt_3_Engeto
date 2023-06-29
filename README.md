@@ -22,7 +22,8 @@ To execute the program it is necessary to input 2 arguments:
 ### Results for district Příbram
 1. argument: ```https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111```
 2. argument: ```pribram_results.csv```
-```python election_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111" "pribram_results.csv"```
+
+`python election_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111" "pribram_results.csv"`
 
 ### Downloading process
 ```
