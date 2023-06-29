@@ -16,13 +16,13 @@ To execute the program it is necessary to input 2 arguments:
 * Link to election results in a chosen district
 * Name of output file in csv format
 
-python election_scraper.py <link for chosen district> <name of output file>
+```python election_scraper.py <link for chosen district> <name of output file>```
 
 ## Example
 ### Results for district Příbram
-1. argument: `https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111`
-2. argument: `pribram_results.csv`
-`python election_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111" "pribram_results.csv"`
+1. argument: ```https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111```
+2. argument: ```pribram_results.csv```
+```python election_scraper.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=2&xnumnuts=2111" "pribram_results.csv"```
 
 ### Downloading process
 ```
