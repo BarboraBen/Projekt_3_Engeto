@@ -3,7 +3,13 @@ Project 3 Engeto Python Academy
 
 ## Description
 
-Program for scraping data from Election to Chamber of Deputies in 2017. Link is here: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ
+Program for scraping data from election to Chamber of Deputies in 2017. Link is here: https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ
+Repository contains:
+* Main file: election_scraper.py
+* Module file: project_3_modules.py
+* Result file: pribram_results.csv
+* List of needed modules: Requirments.txt
+* Description of project: README.md
 
 ## Installing modules
 Modules needed for executing the program are listed in file requirments.txt. 
