@@ -8,7 +8,7 @@ Program for scraping data from Election to Chamber of Deputies in 2017. Link is 
 ## Installing modules
 Modules needed for executing the program are listed in file requirments.txt. 
 It is recomended to install necessary module to new virtual environment. We can install modules as following:
-'pip install -r requirements.txt'
+`pip install -r requirements.txt`
 
 ## Executing program
 
