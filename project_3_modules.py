@@ -4,11 +4,11 @@ author: Barbora Benešová
 email: benes.barbora@seznam.cz
 discord: barbora_benesova
 """
+import re
+
 from requests import get
 from bs4 import BeautifulSoup as bs
-import re
 import urllib.parse
-
 
 def parsing_url(url):
     data = get(url)
@@ -16,13 +16,13 @@ def parsing_url(url):
 
 
 def scrape_code(soup):
-    "Function to scrape codes of locations in chosen district."
+    """Function to scrape codes of locations in chosen district."""
     return [i.text for i in soup.find_all('td', headers=re.compile(r"t\dsa1 t\dsb1"))
             if re.fullmatch(r"\d{6}", i.text)]
 
 
 def scrape_location(soup):
-    "Function to scrape names of locations in chosen district."
+    """Function to scrape names of locations in chosen district."""
     return [i.text for i in soup.find_all('td', "overflow_name")]
 
 
@@ -38,19 +38,19 @@ def scrape_location_url(soup):
 
 
 def scrape_registered(soup):
-    "Function returns number of registred voters in particular location."
+    """Function returns number of registred voters in particular location."""
     registered = soup.find('td', headers="sa2").text
     return registered.replace("\xa0", "")
 
 
 def scrape_envelopes(soup):
-    "Function returns number of envelopes in particular location."
+    """Function returns number of envelopes in particular location."""
     envelopes = soup.find('td', headers="sa3").text
     return envelopes.replace("\xa0", "")
 
 
 def scrape_valid(soup):
-    "Function returns number of valid votes in particular location."
+    """Function returns number of valid votes in particular location."""
     valid = soup.find('td', headers="sa6").text
     return valid.replace("\xa0", "")
 
